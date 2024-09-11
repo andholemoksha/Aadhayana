@@ -68,13 +68,18 @@ class Upload extends Component {
     render() {
         return (
             <div>
-                <h1>GeeksforGeeks</h1>
-                <h3>File Upload using React!</h3>
+                <h1>Adhyana!</h1>
+                <h3>Your Study Buddy</h3>
+                {this.fileData()}
                 <div>
                     <input type="file" onChange={this.onFileChange} />
                     <button onClick={this.onFileUpload}>Upload!</button>
                 </div>
-                {this.fileData()}
+                <br></br>
+                <div>
+                    The Summarized Content 
+                </div>
+             
             </div>
         );
     }
